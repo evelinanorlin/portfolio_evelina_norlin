@@ -1,5 +1,6 @@
 $darkBackground: #0e0e0e;
 $offWhite: #f2f2f2;
+$gradient: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(45deg, #0B486B,#F56217, #E94057);
 
 // general
 
@@ -10,18 +11,50 @@ body{
   font-weight: 200;
 }
 
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+
+
 h1{
+  --bg-size: 400%;
   font-family: eckmannpsych-medium, sans-serif;
-  font-size: 5rem;
+  font-size: 6rem;
+  -webkit-transform:scale(1,2.5); /* Safari and Chrome */
+  -moz-transform:scale(1,2.5); /* Firefox */
+  -ms-transform:scale(1,2.5); /* IE 9 */
+  -o-transform:scale(1,2.5); /* Opera */
+  transform:scale(1,2.5); /* W3C */
+  letter-spacing: 5px;
+  position: relative;
+  bottom: 20px;
+  background: linear-gradient(90deg, #F56217, #E94057,#0B486B, #F56217) 0 0 / var(--bg-size) 100%;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: move-bg 20s infinite linear;
+}
+
+@keyframes move-bg {
+  to {
+    background-position: var(--bg-size) 0;
+  }
 }
 
 p{
   font-size: 1rem;
+  margin-bottom: 35px;
 }
 
 h2, h3{
   font-weight: 200;
   text-transform: uppercase;
+  text-align: center;
+}
+
+h2{
+  font-size: 4rem;
 }
 
 a{
@@ -30,23 +63,67 @@ a{
   cursor: pointer;
 }
 
-button{
+.btn {
   font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 200;
+  padding: 15px;
   color: $offWhite;
-  background: transparent;
-  
+  background: #0e0e0e;
+  border: none;
+  --borderWidth: 2px;
+  position: relative;
 }
+.btn:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg,  #0B486B,#F56217, #E94057);
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 //header
 
 .header{
+  margin-top: 140px;
+  margin-bottom: 140px;
+
   p{
     font-size: 2rem;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 100px;
+
   }
+
   h1{
-    margin-top: 35px;
-    margin-bottom: 35px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+
+  .btn{
+    margin-top: 70px;
+  }
+
+  .hide-in-mobile{
+    display: none;
   }
 }
 
