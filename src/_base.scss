@@ -1,0 +1,52 @@
+$darkBackground: #0e0e0e;
+$offWhite: #f2f2f2;
+
+// general
+
+body{
+  background: $darkBackground;
+  color: $offWhite;
+  font-family:'Montserrat', sans-serif;
+  font-weight: 200;
+}
+
+h1{
+  font-family: eckmannpsych-medium, sans-serif;
+  font-size: 5rem;
+}
+
+p{
+  font-size: 1rem;
+}
+
+h2, h3{
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+a{
+  text-decoration: none;
+  color: $offWhite;
+  cursor: pointer;
+}
+
+button{
+  font-family: 'Montserrat', sans-serif;
+  color: $offWhite;
+  background: transparent;
+  
+}
+//header
+
+.header{
+  p{
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  h1{
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+}
+
