@@ -9,6 +9,8 @@ body{
   color: $offWhite;
   font-family:'Montserrat', sans-serif;
   font-weight: 200;
+  margin: 0;
+  padding: 0;
 }
 
 .container{
@@ -26,7 +28,7 @@ h1{
   -ms-transform:scale(1,2.5); /* IE 9 */
   -o-transform:scale(1,2.5); /* Opera */
   transform:scale(1,2.5); /* W3C */
-  letter-spacing: 5px;
+  letter-spacing: 7px;
   position: relative;
   bottom: 20px;
   background: linear-gradient(90deg, #F56217, #E94057,#0B486B, #F56217) 0 0 / var(--bg-size) 100%;
@@ -44,7 +46,9 @@ h1{
 
 p{
   font-size: 1rem;
+  margin-top: 0;
   margin-bottom: 35px;
+  line-height: 1.7rem;
 }
 
 h2, h3{
@@ -55,6 +59,14 @@ h2, h3{
 
 h2{
   font-size: 4rem;
+  margin-top: 0;
+  margin-bottom: 70px;
+}
+
+h3{
+  margin-top: 0;
+  margin-bottom: 35px;
+  font-size: 2rem;
 }
 
 a{
@@ -101,6 +113,80 @@ a{
 	}
 }
 
+//nav
+
+nav{
+  .menu-button{
+    position: absolute;
+    right: 35px;
+    top: 40px;
+    position: fixed;
+    z-index: 3;
+
+    button{
+      width: 60px;
+      height: 60px;
+      padding: 0;
+      background-image: none;
+      background-color: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0;
+      border: none;
+      transition: all .5s ease-in-out;
+  
+      .burger-line{
+          width: 60px;
+          height: 3px;
+          background: $offWhite;
+          transition: all .5s ease-in-out;
+          box-shadow: $darkBackground 2px 5px 6px;
+
+          &::before,
+          &::after {
+              content: '';
+              position: absolute;
+              width: 60px;
+              height: 3px;
+              background: $offWhite;
+              transition: all .5s ease-in-out;
+              left: 0px;
+              box-shadow: $darkBackground 2px 5px 6px;
+            }
+  
+          &::before{
+              transform: translateY(-25px);
+          }
+  
+          &::after{
+              transform: translateY(25px);
+          }
+      }
+    }
+    .open{
+      .burger-line{
+          transform: translateX(-50px);
+          background: transparent;
+          box-shadow: none;
+  
+          &::before{
+             transform: rotate(45deg) translate(35px, -35px); 
+             box-shadow: none;
+          }
+  
+          &::after{
+              transform: rotate(-45deg) translate(35px, 35px); 
+              box-shadow: none;
+          }
+      }
+  }
+  }
+  p{
+    display: none;
+  }
+}
+
 //header
 
 .header{
@@ -109,8 +195,9 @@ a{
 
   p{
     font-size: 2rem;
-    margin-top: 100px;
-
+    margin-top: 80px;
+    line-height: 3rem;
+    margin-bottom: 70px;
   }
 
   h1{
@@ -120,10 +207,92 @@ a{
 
   .btn{
     margin-top: 70px;
+    width: 250px;
+    display: block;
+    margin: 0 auto;
   }
 
   .hide-in-mobile{
     display: none;
   }
 }
+
+.about{
+  img{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 70px;
+  }
+  ul{
+    list-style-image: url('images/arrow.svg');
+    display: grid;
+    grid-template-columns: 50% 50%;
+    line-height: 2.5rem;
+    margin-bottom: 140px;
+  }
+}
+
+.services{
+  margin-bottom: 140px;
+
+  .big-paragraph{
+    font-size: 2rem;
+    line-height: 3.2rem;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+  button{
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.portfolio{
+  margin-bottom: 140px;
+  img{
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+  }
+}
+
+.contact{
+  text-align: center;
+
+  h3{
+    margin-bottom: 35px;
+  }
+
+  a{
+    display: block;
+    margin-bottom: 70px;
+    font-size: 1rem;
+
+    i{
+      font-size: 5rem;
+      background: -webkit-linear-gradient(45deg, #0B486B,#F56217, #E94057);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
+
+footer{
+  background: #242121;
+  width: 100%;
+  margin: 0;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  p{
+    margin-bottom: 0;
+  }
+}
+
 
