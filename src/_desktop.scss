@@ -4,29 +4,51 @@
     width: 90%;
   }
 
+  nav{
+    .nav-links{
+      height: 110px;
+      top: 0;
+      ul{
+        margin-top: 10px;
+        height: 110px;
+        width: 80%;
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+    }
+  }
+
   .header{
     margin-top: 70px;
     width: 800px;
+    margin-bottom: 280px;
   }
 
   .about{
-
+    margin-bottom: 280px;
      .about-grid{
        display: block;
      }
 
     .about-grid-desktop{
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
       grid-template-areas: 'img head head'
                           'img paragraph skills';
     }
     h2{
       grid-area: head;
+      margin-bottom: 0;
     }
     img{
       grid-area: img;
+      height: 550px;
+      object-fit: cover;
+    }
+
+    .about-paragraph, .skills-column{
+      position: relative;
+      bottom: 70px;
+
     }
 
     .about-paragraph{
@@ -41,4 +63,24 @@
     grid-template-columns: 50% 50%;
   }
 }
+
+  .services{
+    width: 90%;
+    grid-gap: 210px;
+    grid-template-columns: 40% 40%;
+    margin: 0 auto;
+    margin-bottom: 280px;
+  }
+
+  .portfolio{
+    margin-bottom: 280px;
+    .portfolio-grid{
+      grid-template-columns: 33% 33% 33%;
+    }
+
+    img{
+      height: 300px;
+      object-fit: cover;
+    }
+  }
 }

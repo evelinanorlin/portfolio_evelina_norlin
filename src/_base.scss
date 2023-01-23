@@ -3,6 +3,11 @@ $offWhite: #f2f2f2;
 $gradient: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(45deg, #0B486B,#F56217, #E94057);
 
 // general
+html{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
 
 body{
   background: $darkBackground;
@@ -184,6 +189,35 @@ nav{
   }
   p{
     display: none;
+  }
+  .nav-links{
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    background:$darkBackground;
+    position: fixed;
+    bottom: 0px;
+    z-index: 2;
+    margin-top: 0;
+
+    ul{
+      display: flex;
+      height: 100vh;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      padding: 0;
+      li{
+        list-style-type: none;
+
+        a{
+          font-size: 2rem;
+          font-weight: 200;
+          text-transform: uppercase;
+        }
+      }
+
+    }
   }
 }
 
