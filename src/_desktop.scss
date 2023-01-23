@@ -11,11 +11,20 @@
 
   .about{
 
+     .about-grid{
+       display: block;
+     }
+
     .about-grid-desktop{
       display: grid;
-      grid-template-areas: 'img paragraph skills';
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: 'img head head'
+                          'img paragraph skills';
     }
-
+    h2{
+      grid-area: head;
+    }
     img{
       grid-area: img;
     }

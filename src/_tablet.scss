@@ -44,12 +44,18 @@
   }
 
   .about{
-    .about-grid{
+    .about-grid-desktop{
       display: grid;
-      grid-template-areas: 'img paragraph';
+      grid-template-areas: 
+      'head head'
+      'img paragraph'
+      'skills skills';
       grid-gap: 75px;
     }
-
+    h2{
+      grid-area: head;
+      text-align: left;
+    }
     .about-paragraph{
       grid-area: paragraph;
 
@@ -60,6 +66,10 @@
 
     img{
       grid-area: img;
+    }
+
+    .skills-column{
+      grid-area: skills;
     }
 
     ul{
