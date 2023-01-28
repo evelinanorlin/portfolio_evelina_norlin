@@ -2,6 +2,11 @@
 
   .cotainer{
     width: 90%;
+    max-width: 1500px;
+  }
+
+  h1{
+    letter-spacing: 100px;
   }
 
   nav{
@@ -14,14 +19,21 @@
         width: 80%;
         flex-direction: row;
         justify-content: space-evenly;
+
+        li{
+          a, button{
+            font-size: 1rem;
+          }
+        }
       }
     }
   }
 
   .header{
+    .header-container{
+    height:80vh;
     margin-top: 70px;
-    width: 800px;
-    margin-bottom: 280px;
+    }
   }
 
   .about{

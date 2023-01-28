@@ -41,6 +41,7 @@ h1{
   -webkit-background-clip: text;
   background-clip: text;
   animation: move-bg 20s infinite linear;
+  margin: 0;
 }
 
 @keyframes move-bg {
@@ -54,6 +55,7 @@ p{
   margin-top: 0;
   margin-bottom: 35px;
   line-height: 1.7rem;
+  opacity: 0;
 }
 
 h2, h3{
@@ -78,6 +80,8 @@ a{
   text-decoration: none;
   color: $offWhite;
   cursor: pointer;
+  font-size: 2rem;
+  font-weight: 200;
 }
 
 .btn {
@@ -91,6 +95,12 @@ a{
   border: none;
   --borderWidth: 2px;
   position: relative;
+  cursor: pointer;
+  transition: background 0.5s ease-in-out;
+
+  &:hover{
+    background: transparent;
+  }
 }
 .btn:after {
   content: '';
@@ -191,12 +201,13 @@ nav{
     display: none;
   }
   .nav-links{
-    display: none;
+    //display: none;
     height: 100vh;
     width: 100vw;
     background:$darkBackground;
     position: fixed;
     bottom: 0px;
+    right: -100%;
     z-index: 2;
     margin-top: 0;
 
@@ -209,38 +220,43 @@ nav{
       padding: 0;
       li{
         list-style-type: none;
+        display: inline-block;
 
         a{
-          font-size: 2rem;
-          font-weight: 200;
-          text-transform: uppercase;
+        padding-bottom:2px; /*the space for the gradient*/
+        background: linear-gradient($offWhite,$offWhite) center bottom; /*OR bottom right OR bottom left*/
+        background-size: 0% 2px; /*width:0% height:2px*/
+        background-repeat:no-repeat; /* Don't repeat !!*/
+        transition: all 0.45s;
+        text-transform: uppercase;
+
+        &:hover{
+          background-size: 100% 2px; /*width:100% height:2px*/
         }
       }
-
     }
   }
 }
-
+}
 //header
 
 .header{
-  margin-top: 140px;
-  margin-bottom: 140px;
+  height: 100vh;
+
+  .header-container{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 
   p{
-    font-size: 2rem;
-    margin-top: 80px;
+    font-size: 1.5rem;
     line-height: 3rem;
-    margin-bottom: 70px;
-  }
-
-  h1{
-    margin-top: 70px;
-    margin-bottom: 70px;
+    margin: 0;
+    opacity: 1;
   }
 
   .btn{
-    margin-top: 70px;
     width: 250px;
     display: block;
     margin: 0 auto;
@@ -249,6 +265,7 @@ nav{
   .hide-in-mobile{
     display: none;
   }
+}
 }
 
 .about{
@@ -265,6 +282,7 @@ nav{
     grid-template-columns: 50% 50%;
     line-height: 2.5rem;
     margin-bottom: 140px;
+    opacity: 0;
   }
 
   .fat-text{
