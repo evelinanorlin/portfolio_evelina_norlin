@@ -1,8 +1,12 @@
 lockfileVersion: 5.4
 
 specifiers:
+  gsap: ^3.11.4
   sass: ^1.57.1
   vite: ^4.0.0
+
+dependencies:
+  gsap: 3.11.4
 
 devDependencies:
   sass: 1.57.1
@@ -298,6 +302,10 @@ packages:
     dependencies:
       is-glob: 4.0.3
     dev: true
+
+  /gsap/3.11.4:
+    resolution: {integrity: sha512-McHhEguHyExMMnjqKA8G+7TvxmlKQGMbjgwAilnFe1e4id7V/tFveRQ2YMZhTYu0oxHGWvbPltdVYQOu3z1SCA==}
+    dev: false
 
   /has/1.0.3:
     resolution: {integrity: sha512-f2dvO0VU6Oej7RkWJGrehjbzMAjFp5/VKPp5tTpWIV4JHHZK1/BxbFRtf/siA2SWTe09caDmVtYYzWEIbBS4zw==}
