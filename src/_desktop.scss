@@ -88,11 +88,12 @@
     margin-bottom: 280px;
     .portfolio-grid{
       grid-template-columns: 33% 33% 33%;
-    }
-
-    img{
-      height: 300px;
-      object-fit: cover;
+      .img-hover-zoom {
+        img{
+          height: 400px;
+          object-fit: cover;
+        }
+      }
     }
   }
 }

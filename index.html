@@ -25,10 +25,14 @@
       </div>
       <div class="nav-links" id="nav-links">
         <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><button class="btn">Contact</button></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li>
+            <button class="btn" onclick="location.href='#contact'">
+              Contact
+            </button>
+          </li>
         </ul>
       </div>
     </nav>
@@ -42,22 +46,24 @@
             Currently avaible for freelance projects, do you have an idea you to
             turn into reality?
           </p>
-          <button class="btn">Lets get in touch</button>
+          <button class="btn" onclick="location.href='#portfolio'">
+            see my projects
+          </button>
         </div>
       </section>
-      <section class="about">
+      <section class="about" id="about">
         <div class="about-grid-desktop">
           <h2>Who am I?</h2>
           <!-- <div class="about-grid"> -->
           <div class="about-paragraph">
             <h3>Me</h3>
-            <p class="fat-text slide-in">
+            <p class="fat-text slide-in1 slide-in">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco l aboris
               nisi ut aliquip ex ea commodo consequat.
             </p>
-            <p class="slide-in">
+            <p class="slide-in2 slide-in">
               Duis aute irure dolor in reprehenderit in voluptate velit esse
               cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
               cupidatat non proident, sunt in culpa qui officia deserunt mollit
@@ -74,7 +80,7 @@
           <!-- </div> -->
           <div class="skills-column">
             <h3>Some of my skills</h3>
-            <ul class="slide-in">
+            <ul class="slide-in3 slide-in">
               <li>HTML</li>
               <li>CSS</li>
               <li>javaScript</li>
@@ -87,16 +93,16 @@
           </div>
         </div>
       </section>
-      <section class="services">
+      <section class="services" id="services">
         <h2>What can I do for you?</h2>
         <div class="services-grid">
           <div class="services-paragraph">
-            <p class="slide-in2">
+            <p class="slide-in10 slide-in">
               Incididunt ut labore et dolore magna aliqua. Ut enim ad minim
               veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
               ex ea commodo consequat.
             </p>
-            <p class="slide-in2">
+            <p class="slide-in4 slide-in">
               Duis aute irure dolor in reprehenderit in voluptate velit esse
               cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
               cupidatat non proident, sunt in culpa qui officia deserunt mollit
@@ -104,18 +110,20 @@
             </p>
           </div>
           <div>
-            <p class="big-paragraph slide-in2">
+            <p class="big-paragraph slide-in5 slide-in">
               Do you have an idea I can help you to turn into reality? Let’s
               talk!
             </p>
-            <button class="btn">Contact me</button>
+            <button class="btn" onclick="location.href='#contact'">
+              Contact me
+            </button>
           </div>
         </div>
       </section>
-      <section class="portfolio">
+      <section class="portfolio" id="portfolio">
         <h2>Recent projects</h2>
-        <div class="portfolio-grid">
-          <img
+        <div class="portfolio-grid slide-in7" id="portfolio-container">
+          <!-- <img
             src="src/images/norlin_movement.png"
             alt="picture of a yoga website landing"
             height="200"
@@ -135,15 +143,17 @@
             height="200"
             width="250"
             loading="lazy"
-          />
+          /> -->
         </div>
       </section>
-      <section class="contact">
+      <section class="contact" id="contact">
         <h2>contact me</h2>
         <h3>Email</h3>
-        <a href="#">info@evelinanorlin.se</a>
+        <a href="#" class="slide-in8 slide-in">info@evelinanorlin.se</a>
         <h3>check out my github</h3>
-        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#" class="slide-in9 slide-in"
+          ><i class="fa-brands fa-github"></i
+        ></a>
       </section>
     </div>
     <footer>
