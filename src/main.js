@@ -50,16 +50,16 @@ for (let i = 0; i < navLink.length; i++) {
 
 for (let i = 0; i < portfolioItems.length; i++) {
     portfolioContainer.innerHTML += `
-    <div class="img-hover-zoom">
-      <img
-        src="src/images/${portfolioItems[i].img}"
-        alt="picture of a yoga website landing"
-        height="200"
-        width="250"
-        loading="lazy"
-      />
-      <div class="link-container">
-        <a href="#">See more</a>
+    <div class="portfolio-container">
+      <div class="img-hover-zoom" id="image${[i]}">
+        <img
+          src="src/images/${portfolioItems[i].img}"
+          alt="picture of a yoga website landing"
+          height="200"
+          width="250"
+          loading="lazy"
+        />
+          <a href="#">See more</a>
       </div>
     </div>
     `
