@@ -59,7 +59,7 @@ for (let i = 0; i < portfolioItems.length; i++) {
           width="250"
           loading="lazy"
         />
-          <a href="#">See more</a>
+          <a href="#portfolio">See more</a>
       </div>
     </div>
     `
