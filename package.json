@@ -5,5 +5,8 @@
   "type": "module",
   "devDependencies": {
     "sass": "^1.57.1"
+  },
+  "dependencies": {
+    "gsap": "^3.11.4"
   }
 }
