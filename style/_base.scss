@@ -357,9 +357,11 @@ nav{
       position: relative;
       top: 20px;
       left: 20px;
+      cursor: pointer;
     }
 
     .container{
+      margin: 0 auto;
       h2{
         font-size: 2rem;
         margin-top: 50px;
