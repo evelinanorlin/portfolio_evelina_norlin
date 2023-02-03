@@ -1,6 +1,5 @@
-import './style.scss';
-import { gsap } from "gsap";
-import { portfolioItems } from './portfolio_items';
+// import { gsap } from "gsap";
+
 
 const burgerBtn = document.getElementById('burger');
 const navLink = document.querySelectorAll('.nav-link');
@@ -9,6 +8,8 @@ let menuOpen = false;
 
 
 //code for navigaion
+
+console.log("hello")
 
 //menu-toggle
 function menuToggle() {

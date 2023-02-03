@@ -280,7 +280,7 @@ nav{
     margin-bottom: 70px;
   }
   ul{
-    list-style-image: url('images/arrow.svg');
+    list-style-image: url('/images/arrow.svg');
     display: grid;
     grid-template-columns: 50% 50%;
     line-height: 2.5rem;
@@ -393,7 +393,7 @@ nav{
       }
       ul{
         display: none;
-        list-style-image: url('images/arrow.svg');
+        list-style-image: url('/images/arrow.svg');
         display: grid;
         grid-template-columns: 50% 50%;
         line-height: 2.5rem;
