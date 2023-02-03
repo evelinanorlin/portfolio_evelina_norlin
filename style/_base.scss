@@ -150,6 +150,7 @@ nav{
       border-radius: 0;
       border: none;
       transition: all .5s ease-in-out;
+      cursor: pointer;
   
       .burger-line{
           width: 60px;
@@ -218,6 +219,7 @@ nav{
       align-items: center;
       justify-content: space-evenly;
       padding: 0;
+
       li{
         list-style-type: none;
         display: inline-block;
@@ -225,13 +227,13 @@ nav{
         a{
         padding-bottom:2px; /*the space for the gradient*/
         background: linear-gradient($offWhite,$offWhite) center bottom; /*OR bottom right OR bottom left*/
-        background-size: 0% 2px; /*width:0% height:2px*/
+        background-size: 0% 1px; /*width:0% height:2px*/
         background-repeat:no-repeat; /* Don't repeat !!*/
         transition: all 0.45s;
         text-transform: uppercase;
 
         &:hover{
-          background-size: 100% 2px; /*width:100% height:2px*/
+          background-size: 100% 1px; /*width:100% height:2px*/
         }
       }
       .active{
@@ -317,47 +319,62 @@ nav{
     opacity: 0;
 
     .portfolio-container{
-      overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+      overflow: hidden;
+      text-align: center;
 
         .img-hover-zoom {
           height: 300px;
           width: 100%;
-          opacity: 0.7;
+          opacity: 1;
           cursor: pointer;
-          img{
-            width: 100%;
-            transition: all 1s ease;
-            object-fit: cover;
-          }
           a{
-            opacity: 0;
-            text-transform: uppercase;
-            transition: all 1s ease;
-          }
-          &:hover{
-            height: 300px;
-            a{
-              opacity: 1;
-            }
-            
             img{
-              opacity: 0.2;
-              filter: blur(5px);
-              transform: scale(1.5);
+              width: 100%;
+              transition: all 1s ease;
+              object-fit: cover;
             }
+            p{
+              opacity: 0;
+              font-size: 2rem;
+              text-transform: uppercase;
+              transition: all 1s ease;
+            }
+            &:hover{
+              height: 300px;
+              p{
+                opacity: 1;
+              }
+              
+              img{
+                opacity: 0.2;
+                filter: blur(5px);
+                transform: scale(1.5);
+              }
+            }
+
           }
         }
       }
     }
   }
   .portfolio-popup{
+
     a{
-      font-size: 1rem;
+      padding-bottom:2px;
+      background: linear-gradient($offWhite,$offWhite) center bottom;
+      background-size: 0% 1px;
+      background-repeat:no-repeat;
+      transition: all 0.45s;
       text-transform: uppercase;
+      font-size: 1rem;
       position: relative;
       top: 20px;
       left: 20px;
       cursor: pointer;
+
+      &:hover{
+        background-size: 100% 1px; /*width:100% height:2px*/
+      }
     }
 
     .container{

@@ -89,11 +89,36 @@
     .portfolio-grid{
       grid-template-columns: 33% 33% 33%;
       .img-hover-zoom {
-        img{
-          height: 400px;
-          object-fit: cover;
+        a{
+          img{
+            height: 400px;
+            object-fit: cover;
+          }
         }
       }
     }
   }
+  .portfolio-popup{
+    .container{
+      width: 90%;
+      .flex{
+        display: flex;
+        align-items: center;
+
+        img{
+          height: 700px;
+        }
+
+        .content{
+          margin-left: 70px;
+          ul{
+            grid-template-columns: 50% 50%;
+          }
+          .btn{
+            margin: 0;
+          }
+        }
+      }
+  }
+}
 }
