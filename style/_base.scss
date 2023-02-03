@@ -351,16 +351,6 @@ nav{
     }
   }
   .portfolio-popup{
-    // height: 100vh;
-    //position: absolute;
-    // width: 100%;
-    // position: fixed;
-    // left: 0;
-    // top:0;
-    background: $darkBackground;
-    // z-index: 3;
-    // overflow: scroll;
-
     a{
       font-size: 1rem;
       text-transform: uppercase;
@@ -370,15 +360,8 @@ nav{
     }
 
     .container{
-      // display: flex;
-      // justify-content: row;
-      // align-items: center;
-      overflow: scroll;
-      margin: auto auto;
-
       h2{
         font-size: 2rem;
-        margin-bottom: 0;
         margin-top: 50px;
         margin-bottom: 35px;
       }
@@ -390,9 +373,10 @@ nav{
       }
       p{
         opacity: 1;
+        margin-bottom: 0;
       }
       ul{
-        display: none;
+        display: block;
         list-style-image: url('/images/arrow.svg');
         display: grid;
         grid-template-columns: 50% 50%;
@@ -403,11 +387,11 @@ nav{
       .btn{
         display: block;
         margin: 0 auto;
+        margin-top: 35px;
         margin-bottom: 35px;
-      }
-
     }
   }
+}
 
 .contact{
   text-align: center;
@@ -418,7 +402,7 @@ nav{
 
   a{
     display: block;
-    margin-bottom: 70px;
+    margin-bottom: 71px;
     font-size: 1rem;
     opacity: 0;
 
