@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="https://use.typekit.net/lli0xyz.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evelina Norlin portfolio</title>
+    <script
+      src="https://kit.fontawesome.com/bae5c522cf.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <div class="menu-button">
+        <button id="burger" aria-label="open menu">
+          <span class="burger-line"></span>
+        </button>
+        <p>menu</p>
+      </div>
+      <div class="nav-links" id="nav-links">
+        <ul>
+          <li><a href="index.html/" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li>
+            <button class="btn" onclick="location.href='#contact'">
+              Contact
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="portfolio-popup">
+      <a href="#portfolio"><i class="fa-solid fa-arrow-left"></i> go back</a>
+      <div class="container">
+        <h2>Norlin Movement</h2>
+        <img
+          src="src/images/mockup_norlin_movement.png"
+          height="100"
+          width="200"
+        />
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>typeScript</li>
+          <li>GSAP</li>
+        </ul>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <button
+          href="https://evelinanorlin.github.io/norlin_movement/"
+          class="btn"
+        >
+          visit site
+        </button>
+      </div>
+    </section>
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>

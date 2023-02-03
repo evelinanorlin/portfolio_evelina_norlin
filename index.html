@@ -14,6 +14,7 @@
       src="https://kit.fontawesome.com/bae5c522cf.js"
       crossorigin="anonymous"
     ></script>
+    <script type="module" src="src/main.js" defer></script>
   </head>
   <body>
     <nav>
@@ -122,9 +123,22 @@
       </section>
       <section class="portfolio" id="portfolio">
         <h2>Recent projects</h2>
-        <div class="portfolio-grid slide-in7" id="portfolio-container"></div>
-        <div id="portfolio-popup" class="portfolio-popup">
-          <a href="#portfolio"
+        <div class="portfolio-grid slide-in7" id="portfolio-container">
+          <div class="portfolio-container">
+            <div class="img-hover-zoom">
+              <img
+                src="src/images/norlin_movement.png"
+                alt="picture of a yoga website landing"
+                height="200"
+                width="250"
+                loading="lazy"
+              />
+              <a href="norlinmovement.html">See more</a>
+            </div>
+          </div>
+        </div>
+        <!-- <div id="portfolio-popup" class="portfolio-popup"> -->
+        <!-- <a href="#portfolio"
             ><i class="fa-solid fa-arrow-left"></i> go back</a
           >
           <div class="container">
@@ -150,8 +164,8 @@
             >
               visit site
             </button>
-          </div>
-        </div>
+          </div> -->
+        <!-- </div> -->
       </section>
       <section class="contact" id="contact">
         <h2>contact me</h2>
@@ -166,6 +180,5 @@
     <footer>
       <p>© all rights reserved Evelina Norlin 2023</p>
     </footer>
-    <script type="module" src="src/main.js"></script>
   </body>
 </html>

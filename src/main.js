@@ -47,23 +47,40 @@ for (let i = 0; i < navLink.length; i++) {
 }
 
 // Portfolio
+const portfolioPopup = document.getElementById('portfolio-popup');
 
-for (let i = 0; i < portfolioItems.length; i++) {
-    portfolioContainer.innerHTML += `
-    <div class="portfolio-container">
-      <div class="img-hover-zoom" id="image${[i]}">
-        <img
-          src="src/images/${portfolioItems[i].img}"
-          alt="picture of a yoga website landing"
-          height="200"
-          width="250"
-          loading="lazy"
-        />
-          <a href="#portfolio">See more</a>
-      </div>
-    </div>
-    `
-}
+// for (let i = 0; i < portfolioItems.length; i++) {
+//     portfolioContainer.innerHTML += `
+//     <div class="portfolio-container">
+//       <div class="img-hover-zoom" id="image${[i]}">
+//         <img
+//           src="src/images/${portfolioItems[i].img}"
+//           alt="picture of a yoga website landing"
+//           height="200"
+//           width="250"
+//           loading="lazy"
+//         />
+//           <a href="${portfolioItems[i].HTMLlink}">See more</a>
+//       </div>
+//     </div>
+
+//     </div>
+//     `;
+// }
+
+// // function openPortfolioItem(e){
+// //   const currentPopup = e.target.parentElement.parentElement.parentElement.lastElementChild;
+// //   console.log(currentPopup)
+
+// //   // if(currentPopup.style.display == 'block'){
+// //   //   currentPopup.style.display = 'none';
+// //   // } else{
+// //   //   currentPopup.style.display = 'block';
+// //   // }
+// // }
+
+
+// portfolioContainer.addEventListener('click', openPortfolioItem)
 
 // textanimations
 
