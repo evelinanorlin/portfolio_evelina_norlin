@@ -106,7 +106,8 @@
         align-items: center;
 
         img{
-          height: 700px;
+          height: 850px;
+          max-width: 60%;
         }
 
         .content{
@@ -119,6 +120,15 @@
           }
         }
       }
+  }
+}
+.contact{
+  .contact-flex{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    margin-bottom: 70px;
   }
 }
 }

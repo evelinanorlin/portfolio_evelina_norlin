@@ -99,10 +99,10 @@ const animateParagraph10 = document.querySelectorAll('.slide-in10');
 const textObserver1 = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      gsap.to('.slide-in1', { opacity: 1, duration: 4, delay: 0.3});
+      gsap.to('.slide-in1', { opacity: 1, duration: 4, delay: 0.2});
     }
     else {
-      gsap.to('.slide-in1', { opacity: 0, duration: 4, delay: 0.3});
+      gsap.to('.slide-in1', { opacity: 0, duration: 4, delay: 0.2});
     }
   });
 });
@@ -110,9 +110,9 @@ const textObserver1 = new IntersectionObserver((entries) => {
 const textObserver2 = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      gsap.to('.slide-in2', { opacity: 1, duration: 4, delay: 0.3})
+      gsap.to('.slide-in2', { opacity: 1, duration: 4, delay: 0.2})
     }     else {
-      gsap.to('.slide-in2', { opacity: 0, duration: 4, delay: 0.3});
+      gsap.to('.slide-in2', { opacity: 0, duration: 4, delay: 0.2});
     }
   });
   });
@@ -120,11 +120,11 @@ const textObserver2 = new IntersectionObserver((entries) => {
 const textObserver3 = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      gsap.to('.slide-in3', { opacity: 1, duration: 4, delay: 0.3})
+      gsap.to('.slide-in3', { opacity: 1, duration: 4, delay: 0.2})
       console.log('hurra')
     }     
     else {
-      gsap.to('.slide-in3', { opacity: 0, duration: 4, delay: 0.3});
+      gsap.to('.slide-in3', { opacity: 0, duration: 4, delay: 0.2});
     }
   });
 });
@@ -132,10 +132,10 @@ const textObserver3 = new IntersectionObserver((entries) => {
 const textObserver4 = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      gsap.to('.slide-in4', { opacity: 1, duration: 4, delay: 0.3})
+      gsap.to('.slide-in4', { opacity: 1, duration: 4, delay: 0.2})
     } 
     else {
-      gsap.to('.slide-in4', { opacity: 0, duration: 4, delay: 0.3});
+      gsap.to('.slide-in4', { opacity: 0, duration: 4, delay: 0.2});
     }
   });
 });
@@ -143,10 +143,10 @@ const textObserver4 = new IntersectionObserver((entries) => {
 const textObserver5 = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      gsap.to('.slide-in5', { opacity: 1, duration: 4, delay: 0.3})
+      gsap.to('.slide-in5', { opacity: 1, duration: 4, delay: 0.2})
     }
     else {
-      gsap.to('.slide-in5', { opacity: 0, duration: 4, delay: 0.3});
+      gsap.to('.slide-in5', { opacity: 0, duration: 4, delay: 0.2});
     }
   });
 });
@@ -154,10 +154,10 @@ const textObserver5 = new IntersectionObserver((entries) => {
 const textObserver6 = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      gsap.to('.slide-in6', { opacity: 1, duration: 4, delay: 0.3})
+      gsap.to('.slide-in6', { opacity: 1, duration: 4, delay: 0.2})
     }
     else {
-      gsap.to('.slide-in6', { opacity: 0, duration: 4, delay: 0.3});
+      gsap.to('.slide-in6', { opacity: 0, duration: 4, delay: 0.2});
     }
   });
 });
@@ -165,10 +165,10 @@ const textObserver6 = new IntersectionObserver((entries) => {
 const textObserver7 = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      gsap.to('.slide-in7', { opacity: 1, duration: 4, delay: 0.3})
+      gsap.to('.slide-in7', { opacity: 1, duration: 4, delay: 0.2})
     }
     else {
-      gsap.to('.slide-in7', { opacity: 0, duration: 4, delay: 0.3});
+      gsap.to('.slide-in7', { opacity: 0, duration: 4, delay: 0.2});
     }
   });
 });
@@ -176,10 +176,10 @@ const textObserver7 = new IntersectionObserver((entries) => {
 const textObserver8 = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      gsap.to('.slide-in8', { opacity: 1, duration: 4, delay: 0.3})
+      gsap.to('.slide-in8', { opacity: 1, duration: 4, delay: 0.2})
     }
     else {
-      gsap.to('.slide-in8', { opacity: 0, duration: 4, delay: 0.3});
+      gsap.to('.slide-in8', { opacity: 0, duration: 4, delay: 0.2});
     }
   });
 });
@@ -187,10 +187,10 @@ const textObserver8 = new IntersectionObserver((entries) => {
 const textObserver9 = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      gsap.to('.slide-in9', { opacity: 1, duration: 4, delay: 0.3})
+      gsap.to('.slide-in9', { opacity: 1, duration: 4, delay: 0.2})
     }
     else {
-      gsap.to('.slide-in9', { opacity: 0, duration: 4, delay: 0.3});
+      gsap.to('.slide-in9', { opacity: 0, duration: 4, delay: 0.2});
     }
   });
 });
@@ -198,10 +198,10 @@ const textObserver9 = new IntersectionObserver((entries) => {
 const textObserver10 = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      gsap.to('.slide-in10', { opacity: 1, duration: 4, delay: 0.3})
+      gsap.to('.slide-in10', { opacity: 1, duration: 4, delay: 0.2})
     }
     else {
-      gsap.to('.slide-in10', { opacity: 0, duration: 4, delay: 0.3});
+      gsap.to('.slide-in10', { opacity: 0, duration: 4, delay: 0.2});
     }
   });
 });

@@ -123,6 +123,13 @@
     a{
       font-size: 2rem;
     }
+    .social-media-flex{
+      width: 500px;
+      display: flex;
+      margin: 0 auto;
+      justify-content: space-between;
+
+    }
   }
   .portfolio-popup{
     a{
@@ -147,6 +154,10 @@
       }
       p{
         margin-bottom: 70px;
+      }
+      .button-flex{
+        display: flex;
+        justify-content: space-between;
       }
     }
   }
