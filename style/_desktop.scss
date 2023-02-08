@@ -31,7 +31,9 @@
 
   .header{
     .header-container{
+    max-width: 1440px;
     height:80vh;
+    margin: 0 auto;
     margin-top: 70px;
     }
   }
@@ -44,8 +46,11 @@
 
     .about-grid-desktop{
       display: grid;
+      max-width: 1440px;
+      grid-template-columns: 20% 40% 30%;
       grid-template-areas: 'img head head'
                           'img paragraph skills';
+      margin: 0 auto;
     }
     h2{
       grid-area: head;
@@ -55,6 +60,9 @@
       grid-area: img;
       height: 550px;
       object-fit: cover;
+    }
+    h3{
+      text-align: left;
     }
 
     .about-paragraph, .skills-column{
@@ -73,15 +81,41 @@
 
   ul{
     grid-template-columns: 50% 50%;
+    position: relative;
+    left: -40px;
   }
 }
 
   .services{
-    width: 90%;
-    grid-gap: 210px;
-    grid-template-columns: 40% 40%;
-    margin: 0 auto;
-    margin-bottom: 280px;
+    .services-grid{
+
+      width: 100%;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-areas: 
+      "description sevices"
+      "action action";
+      max-width: 1300px;
+      margin: 0 auto;
+      margin-bottom: 280px;
+      row-gap: 0;
+      column-gap: 140px;
+
+      p{
+        margin-bottom: 35px;
+        margin-top: 0;
+      }
+
+      ul{
+        display: grid;
+        grid-template-columns: 50% 50%;
+      }
+      .action{
+        .big-paragraph{
+          margin-top: 70px;
+        }
+      }
+    }
   }
 
   .portfolio{
