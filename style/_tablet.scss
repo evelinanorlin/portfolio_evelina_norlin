@@ -28,10 +28,11 @@
       -ms-transform:scale(1,2); /* IE 9 */
       -o-transform:scale(1,2); /* Opera */
       transform:scale(1,2); /* W3C */
-      letter-spacing: 10px;
+      letter-spacing: 15px;
       bottom: 50px;
       padding-top: 30px;
       padding-bottom: 30px;
+      margin-top: 280px;
     }
     .hide-in-mobile{
       display: block;
@@ -51,33 +52,37 @@
       'head head'
       'img paragraph'
       'skills skills';
-      grid-gap: 75px;
-    }
-    h2{
-      grid-area: head;
-      text-align: left;
-    }
-    .about-paragraph{
-      grid-area: paragraph;
+      column-gap: 70px;
+      grid-template-columns: 40% 50%;
 
-      h3{
+      img{
+        height: 90%;
+        object-fit: cover;
+        grid-area: img;
+      }
+
+      h2{
+        grid-area: head;
         text-align: left;
       }
-    }
 
-    img{
-      grid-area: img;
-    }
-
-    .skills-column{
-      grid-area: skills;
-    }
-
-    ul{
-      width: 80%;
-      grid-template-columns: 25% 25% 25% 25%;
-      margin: 0 auto;
-      margin-bottom: 140px;
+      .about-paragraph{
+        grid-area: paragraph;
+        h3{
+          text-align: left;
+        }
+      }
+  
+      .skills-column{
+        grid-area: skills;
+      }
+  
+      ul{
+        width: 80%;
+        grid-template-columns: 25% 25% 25% 25%;
+        margin: 0 auto;
+        margin-bottom: 140px;
+      }
     }
   }
 
@@ -85,29 +90,28 @@
     .services-grid{
       display: grid;
       width: 100%;
-      grid-template-columns: 50% 50%;
+      grid-template-columns: 45% 45%;
+      margin: 0 auto;
+      column-gap: 70px;
       grid-template-areas: 
       "description services"
       "action action";
-      grid-gap: 35px;
 
       .services-paragraph{
         grid-area: description;
+
       }
-      .services-list{
-        h4{
-          margin-top: 0;
-        }
-      }
+
       .action{
         grid-area: action;
   
         .big-paragraph{
+          display: block;
           padding: 0;
           margin: 0 auto;
           margin-bottom: 35px;
           margin-top: 35px;
-          width: 100%;
+          width: 70%;
           text-align: center;
         }
     
