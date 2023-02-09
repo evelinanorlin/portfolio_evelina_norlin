@@ -54,7 +54,7 @@ p{
   font-size: 1rem;
   margin-top: 0;
   margin-bottom: 35px;
-  line-height: 1.7rem;
+  line-height: 1.9rem;
   opacity: 0;
 }
 
@@ -249,22 +249,18 @@ nav{
   height: 100vh;
 
   .header-container{
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  margin-top: 175px;
 
   p{
     font-size: 1.5rem;
     line-height: 3rem;
-    margin: 0;
+    margin-top: 70px;
     opacity: 1;
   }
 
   .btn{
     width: 250px;
     display: block;
-    margin: 0 auto;
   }
 
   .hide-in-mobile{
@@ -301,29 +297,20 @@ nav{
     text-align: left;
   }
 
-  .services-list{
-    opacity: 0;
-    p{
-      opacity: 1;
-    }
-  
-    ul{
-      list-style-image: url('/images/arrow.svg');
-      line-height: 2.5rem;
-    }
-  }
+
 
   .big-paragraph{
+    display: none;
     font-size: 2rem;
     line-height: 3.2rem;
     width: 90%;
     margin: 0 auto;
     margin-top: 70px;
     margin-bottom: 70px;
+    margin-left: 0;
   }
   button{
     display: block;
-    margin: 0 auto;
   }
 }
 
@@ -478,5 +465,4 @@ footer{
     margin-bottom: 0;
   }
 }
-
 
